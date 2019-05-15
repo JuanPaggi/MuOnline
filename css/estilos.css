@@ -1,0 +1,228 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.fondo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  background:
+    linear-gradient(#130b0b, transparent),
+    linear-gradient(to top left, #1c162b, transparent),
+    linear-gradient(to top right, #1c1a23, transparent);
+    background-blend-mode: screen;
+
+}
+
+.container{
+  width: 1024px;
+  display: grid;
+  /* grid-gap: 10px; */
+  padding: 10px;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+                       "hero"
+                       "cuerpo"
+                       "footer";
+}
+
+.item{
+  background: lightblue;
+  border: 1px solid red;
+}
+
+.header{
+  grid-area: header;
+  width: 100%;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.hero{
+  grid-area: hero;
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.cuerpo{
+  grid-area: cuerpo;
+  width: 100%;
+  height: 1000px;
+}
+
+.footer{
+  grid-area: footer;
+  width: 100%;
+  height: 50px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: linear-gradient(to top left, black, #4c4c4c);
+  color: white;
+}
+
+/* ----- HEADER ----- */
+
+
+.header-container{
+  display: grid;
+  padding: 11px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "inicio descargas ranking tienda registo";
+  background-image: linear-gradient(to bottom right, black, #4c4c4c);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.header-container a{
+  font-size: 1.5em;
+  color:white;
+  font-family: 'Black Ops One', cursive;
+}
+
+.inicio{
+  grid-area: inicio;
+  display: flex;
+  justify-content: center;
+}
+.descargas{
+  grid-area: descargas;
+  display: flex;
+  justify-content: center;
+}
+.ranking{
+  grid-area: ranking;
+  display: flex;
+  justify-content: center;
+}
+.tienda{
+  grid-area: tienda;
+  display: flex;
+  justify-content: center;
+}
+.registo{
+  grid-area: registo;
+  display: flex;
+  justify-content: center;
+}
+
+/* ----- HERO ----- */
+
+.hero-container{
+  width: inherit;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero img{
+  width: 100%;
+  height: inherit;
+  margin: 0;
+}
+
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(55%, -50%);
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.5em;
+    color: #771717;
+}
+
+/* ----- CUERPO ----- */
+
+.cuerpo-container{
+    display: grid;
+    height: inherit;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "left center right";
+}
+
+.left{
+  grid-area: left;
+  height: inherit;
+}
+
+.center{
+  grid-area: center;
+  height: inherit;
+}
+
+.right{
+  grid-area: right;
+  height: inherit;
+}
+
+/* ----- LEFT ----- */
+
+.left-container{
+    display: grid;
+    height: inherit;
+    grid-template-columns: 100%;
+    grid-template-areas: "login"
+                         "tabla-menu"
+                         "tabla-ranking";
+}
+
+.login{
+  grid-area: login;
+  height: 20%;
+}
+
+.tabla-menu{
+  grid-area: tabla-menu;
+  height: 40%;
+}
+
+.tabla-ranking{
+  grid-area: tabla-ranking;
+  height: 40%;
+}
+
+/* ----- RIGHT ----- */
+
+.left-container{
+    display: grid;
+    height: inherit;
+    grid-template-columns: 100%;
+    grid-template-areas: "servidor"
+                         "visitas"
+                         "tabla-guild";
+}
+
+.servidor{
+  grid-area: servidor;
+  height: 40%;
+}
+
+.visitas{
+  grid-area: visitas;
+  height: 20%;
+}
+
+.tabla-guild{
+  grid-area: tabla-guild;
+  height: 40%;
+}
+
+/* ----- FOOTER ----- */
+
+.footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -61,6 +61,7 @@ a{
   grid-area: cuerpo;
   width: 100%;
   height: 1000px;
+    background: #171717;
 }
 
 .footer{
@@ -169,53 +170,94 @@ a{
 
 /* ----- LEFT ----- */
 
-.left-container{
-    display: grid;
-    height: inherit;
-    grid-template-columns: 100%;
-    grid-template-areas: "login"
-                         "tabla-menu"
-                         "tabla-ranking";
-}
 
 .login{
-  grid-area: login;
   height: 20%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
 }
 
 .tabla-menu{
-  grid-area: tabla-menu;
   height: 40%;
 }
 
 .tabla-ranking{
-  grid-area: tabla-ranking;
   height: 40%;
 }
 
-/* ----- RIGHT ----- */
+/* ----- LOGIN ----- */
 
-.left-container{
-    display: grid;
-    height: inherit;
-    grid-template-columns: 100%;
-    grid-template-areas: "servidor"
-                         "visitas"
-                         "tabla-guild";
+.title-login{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Black Ops One', cursive;
 }
 
+.datos-login{
+  height: 85%;
+}
+
+.usuario{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input{
+  width: 120px;
+  height: 1.5em;
+  border-radius: 5px;
+}
+
+.pass{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingresar{
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-button{
+  width: 80px;
+  height: 2em;
+  background: black;
+  color: white;
+}
+
+.recuperar-pass{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Black Ops One', cursive; */
+}
+
+.recuperar-pass a{
+  color: white;
+}
+
+
+/* ----- RIGHT ----- */
+
 .servidor{
-  grid-area: servidor;
   height: 40%;
 }
 
 .visitas{
-  grid-area: visitas;
   height: 20%;
 }
 
 .tabla-guild{
-  grid-area: tabla-guild;
   height: 40%;
 }
 

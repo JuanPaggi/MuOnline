@@ -79,7 +79,7 @@ a{
 
 .header-container{
   display: grid;
-  padding: 11px;
+  padding: 10px;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas: "inicio descargas ranking tienda registo";
   background-image: linear-gradient(to bottom right, black, #4c4c4c);
@@ -117,6 +117,10 @@ a{
   grid-area: registo;
   display: flex;
   justify-content: center;
+}
+
+.hover-header:hover{
+  font-size: 1.6em;
 }
 
 /* ----- HERO ----- */
@@ -161,6 +165,7 @@ a{
 .center{
   grid-area: center;
   height: inherit;
+  background: gray;
 }
 
 .right{
@@ -180,11 +185,22 @@ a{
 
 .tabla-menu{
   height: 40%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
 }
 
 .tabla-ranking{
   height: 40%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* ----- LOGIN ----- */
 
@@ -194,6 +210,7 @@ a{
   justify-content: center;
   align-items: center;
   font-family: 'Black Ops One', cursive;
+  font-size: 1.2em;
 }
 
 .datos-login{
@@ -246,20 +263,141 @@ a{
   color: white;
 }
 
+/* ----- TABLA MENU ----- */
+
+.title-tabla-menu{
+  height:12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+  margin-bottom: 8px;
+}
+
+.tabla-menu-opcion{
+  color: white;
+  height:8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 2px solid black;
+  border-top: 1px solid gray;
+}
+
+.hover-tabla:hover{
+  font-size: 1.1em;
+}
+
+/* ----- MENU RANKING ----- */
+
+.title-tabla-ranking{
+  height:35px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.puesto{
+  color: white;
+  height:5%;
+  display: flex;
+  justify-content: center;
+  padding:1%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  width: 80%;
+  font-size: .9em;
+}
 
 /* ----- RIGHT ----- */
 
 .servidor{
   height: 40%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
 }
 
 .visitas{
   height: 20%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+
 }
 
 .tabla-guild{
   height: 40%;
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.visitas-titulo{
+  height:30%;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador-link{
+  height:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador{
+  width: 80%;
+}
+
+.servidor-titulo{
+  height:12%;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datos-servidor{
+  height:88%;
+}
+
+/* ----- CENTER ----- */
+
+
 
 /* ----- FOOTER ----- */
 

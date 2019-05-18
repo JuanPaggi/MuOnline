@@ -173,6 +173,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .right{
@@ -405,6 +406,86 @@ a{
 /* ----- CENTER ----- */
 
 
+.registro-usuario-titulo{
+  height:10%;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  font-size: 1.8em;
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-usuario-text{
+  height:4%;
+  font-size: 1.1em;
+  font-family: 'Black Ops One', cursive;
+  text-align: left;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-usuario-user{
+  width: 300px;
+  height: 25px;
+}
+
+.registro-usuario-nombre{
+  width: 300px;
+  height: 25px;
+}
+
+.registro-usuario-apellido{
+  width: 300px;
+  height: 25px;
+}
+
+.registro-usuario-email{
+  width: 300px;
+  height: 25px;
+}
+
+.registro-usuario-pass{
+  width: 300px;
+  height: 25px;
+}
+
+.registro-usuario-repit-pass{
+  width: 300px;
+  height: 25px;
+}
+
+.espacio{
+  height: 40%;
+}
+
+.registro-usuario-btn{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  background: #171717;
+  color: white;
+  margin-top: 15px;
+}
+
+.checkbox-condiciones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-condiciones a{
+  color: white;
+  text-decoration: underline;
+}
 
 /* ----- FOOTER ----- */
 

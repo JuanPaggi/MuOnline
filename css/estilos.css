@@ -165,7 +165,14 @@ a{
 .center{
   grid-area: center;
   height: inherit;
-  background: gray;
+
+  background: #171717;
+  color: white;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .right{

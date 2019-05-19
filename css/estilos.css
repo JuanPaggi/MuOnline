@@ -53,8 +53,9 @@ a{
 .hero{
   grid-area: hero;
   width: 100%;
-  height: 260px;
+  height: 280px;
   position: relative;
+  overflow: hidden;
 }
 
 .cuerpo{
@@ -127,14 +128,14 @@ a{
 
 .hero-container{
   width: inherit;
-  height: auto;
-  overflow: hidden;
+  height: 300px;
 }
 
 .hero img{
   width: 100%;
   height: inherit;
   margin: 0;
+  object-fit:contain;
 }
 
 
@@ -145,7 +146,10 @@ a{
     transform: translate(55%, -50%);
     font-family: 'Black Ops One', cursive;
     font-size: 2.5em;
-    color: #771717;
+    color: #9c1c1c;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #9c9c9c;
 }
 
 /* ----- CUERPO ----- */

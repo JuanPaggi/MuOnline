@@ -80,7 +80,7 @@ a{
 
 .header-container{
   display: grid;
-  padding: 10px;
+  padding: 13px;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-areas: "inicio descargas ranking tienda registo";
   background-image: linear-gradient(to bottom right, black, #4c4c4c);
